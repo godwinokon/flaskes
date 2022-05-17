@@ -1,0 +1,37 @@
+<h1>Hello World!</h1>
+
+<p>This is my first webpage with flask</p>
+
+<h2>This is amazing</h2>
+
+<p>My name is {{ first_name }}</p>
+
+<p>{{ stuff|title}}</p>
+
+<h3>Favorite Soup<h3>
+
+<!--	
+{% for topping in favorite_soup %}
+	{{ topping }}</br>
+{% endfor %}
+
+<br/><br/>
+-->
+
+<!--{{ favorite_soup.1}}-->
+
+<!--{{ favorite_soup.2}}-->
+
+<!--{{ favorite_soup.4 + 56}}-->
+
+
+{% for topping in favorite_soup %}
+
+	{% if topping == 50 %}
+		{{ topping + 203}}<br/>
+	{% else %}
+		{{ topping }}<br/>
+	{% endif %}
+
+	
+{% endfor %}
